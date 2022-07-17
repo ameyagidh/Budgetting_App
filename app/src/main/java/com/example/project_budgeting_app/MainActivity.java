@@ -70,9 +70,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void goToActivity() {
-        Intent i = new Intent(this,SignUp.class);
+        Intent intent_ = new Intent(this,SignUp.class);
         Log.d("Ameya", "goToActivity: In");
-        startActivity(i);
+        startActivity(intent_);
         Log.d("Ameya", "goToActivity: =qqq");
     }
 }
