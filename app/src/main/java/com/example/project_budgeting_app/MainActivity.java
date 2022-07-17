@@ -1,9 +1,11 @@
 package com.example.project_budgeting_app;
 
+import androidx.annotation.LongDef;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,10 +38,8 @@ public class MainActivity extends AppCompatActivity {
         Forgot_Password = (Button) findViewById(R.id.ForgotPassword);
         Sign_Up = (Button) findViewById(R.id.SignUp);
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
-
+        progressBar.setVisibility(View.GONE);
         mAuth = FirebaseAuth.getInstance();
-
-
 
 
         Login.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void goToActivity() {
         Intent i = new Intent(this,SignUp.class);
+        Log.d("Ameya", "goToActivity: In");
         startActivity(i);
+        Log.d("Ameya", "goToActivity: =qqq");
     }
 }

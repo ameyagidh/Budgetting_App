@@ -37,8 +37,8 @@ public class SignUp extends AppCompatActivity {
 
         Full_Name = (EditText) findViewById(R.id.Name);;
         Age = (EditText) findViewById(R.id.Age);;
-        EmailAddress = (EditText) findViewById(R.id.EmailAddress);
-        Password = (EditText) findViewById(R.id.Password);
+        EmailAddress = (EditText) findViewById(R.id.emailAddress);
+        Password = (EditText) findViewById(R.id.password);
         progressBar = (ProgressBar)findViewById(R.id.progressBar2);
 
         mAuth = FirebaseAuth.getInstance();
